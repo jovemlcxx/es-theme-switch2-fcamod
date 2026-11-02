@@ -1,0 +1,21 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Dark interface, pure black for OLED screens: the whole theme and the settings menu -->
+   <variables>
+      <bgColor>000000FF</bgColor>
+      <textColor>F2F2F2FF</textColor>
+      <subColor>8C8C8CFF</subColor>
+      <accentColor>5B9BFFFF</accentColor>
+      <tileColor>1C1C1EFF</tileColor>
+      <dockColor>1C1C1EFF</dockColor>
+      <iconColor>F2F2F2FF</iconColor>
+      <menuBackgroundColor>0A0A0AF2</menuBackgroundColor>
+      <menuTextColor>F2F2F2AA</menuTextColor>
+      <menuTextSelectedColor>F2F2F2</menuTextSelectedColor>
+      <menuSeparatorColor>F2F2F21A</menuSeparatorColor>
+      <helpTextColor>F2F2F266</helpTextColor>
+      <helpIconColor>F2F2F266</helpIconColor>
+      <menuTextInputImage>./_inc/images/menu-textinput-dark.png</menuTextInputImage>
+      <menuTextInputImageActive>./_inc/images/menu-textinput-dark-active.png</menuTextInputImageActive>
+   </variables>
+</theme>

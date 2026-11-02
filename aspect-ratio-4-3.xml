@@ -1,0 +1,220 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- 4:3 (640x480), laid out in pixels and written as fractions of the screen (/640, /480). 24 px margin left and right (the Switch's), nothing on the edges.
+          top             profile (40 px, centred on y 43 like the pill) at the left; at the right clock, wifi and battery in the order of the Switch 2 home, inside a pill (x 400..617, y 27..59; the
+                          clock is right-aligned at x 499, so 12 h and 24 h both fit)
+          system screen   name of the selected system y 116..140; tiles 124 px, pitch 140 (the selected one at x 40..164, y 150..274, same size as the others, the ring
+                          134 px around it); the carousel box is wider than the screen on both sides (x -200 .. 1200 = 10 slots of 140) so only the screen's
+                          edge cuts the row; logoPos puts the selected tile's left edge at x 40 (240 from the box's left). Dock: pill x 65..575, y 318..378
+          game list       column of banners x 24..138 (5 cells of 114 x 64, gap 8, y 68..420), the selected one the middle one, same size, with its ring (122 x 72);
+                          the card of the game's image at the right (x 200..617, y 68..296, filled by the image: cover + the mask frame.png), then the system, the name and three rows of data (y 354..420)
+          bottom          console icon at the left, button legend (footer-enabled.xml) at y 0.895 -->
+   <view name="screen">
+      <batteryIndicator name="batteryIndicator">
+         <pos>0.8453 0.0596</pos>
+         <size>0.1 0.06</size>
+      </batteryIndicator>
+      <text name="clock">
+         <pos>0.5897 0.0596</pos>
+         <size>0.19 0.06</size>
+         <fontSize>0.034</fontSize>
+         <alignment>right</alignment>
+      </text>
+   </view>
+   <view name="system, grid">
+      <helpsystem name="help">
+         <pos>0.04 0.93</pos>
+         <fontSize>0.027</fontSize>
+      </helpsystem>
+      <image name="e_avatar" extra="true">
+         <pos>0.0375 0.0479</pos>
+         <size>0.0625 0.0833</size>
+      </image>
+      <image name="e_status_pill" extra="true">
+         <pos>0.625 0.05625</pos>
+         <size>0.3391 0.0667</size>
+      </image>
+      <image name="e_avatar_ring" extra="true">
+         <pos>0.0375 0.0479</pos>
+         <size>0.0625 0.0833</size>
+      </image>
+      <image name="e_wifi" extra="true">
+         <pos>0.7953 0.0667</pos>
+         <size>0.0344 0.0458</size>
+      </image>
+      <image name="e_console" extra="true">
+         <pos>0.0375 0.8990</pos>
+         <size>0.0875 0.0524</size>
+      </image>
+   </view>
+
+   <view name="system">
+      <text name="e_name" extra="true">
+         <pos>0.0625 0.2417</pos>
+         <size>0.55 0.05</size>
+         <fontSize>0.034</fontSize>
+      </text>
+      <text name="systemInfo">
+         <pos>0.5 0.2417</pos>
+         <size>0.4641 0.05</size>
+         <fontSize>0.026</fontSize>
+      </text>
+      <carousel name="systemcarousel">
+         <pos>-0.3125 0.3125</pos>
+         <size>2.1875 0.25833</size>
+         <logoSize>0.19375 0.25833</logoSize>
+         <logoPos>0.375 0</logoPos>
+         <maxLogoCount>10</maxLogoCount>
+         <origin>0 0</origin>
+      </carousel>
+      <image name="e_dock" extra="true">
+         <pos>0.1016 0.6625</pos>
+         <size>0.7969 0.125</size>
+      </image>
+      <image name="e_d0" extra="true">
+         <pos>0.1219 0.6708</pos>
+         <size>0.0813 0.1083</size>
+      </image>
+      <image name="e_d1" extra="true">
+         <pos>0.2141 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d2" extra="true">
+         <pos>0.2906 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d3" extra="true">
+         <pos>0.3672 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d4" extra="true">
+         <pos>0.4437 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d5" extra="true">
+         <pos>0.5203 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d6" extra="true">
+         <pos>0.5969 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d7" extra="true">
+         <pos>0.6734 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d8" extra="true">
+         <pos>0.75 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+      <image name="e_d9" extra="true">
+         <pos>0.8266 0.6938</pos>
+         <size>0.0469 0.0625</size>
+      </image>
+   </view>
+
+   <view name="grid">
+      <imagegrid name="gamegrid">
+         <pos>0.0375 0.1417</pos>
+         <size>0.1781 0.7333</size>
+         <padding>0 0 0 0</padding>
+         <margin>0 0.0167</margin>
+         <autoLayout>1 5</autoLayout>
+      </imagegrid>
+      <gridtile name="default">
+         <size>0.1781 0.1333</size>
+      </gridtile>
+      <gridtile name="selected">
+         <size>0.1781 0.1333</size>
+      </gridtile>
+      <image name="e_ring_banner" extra="true">
+         <pos>0.0313 0.4333</pos>
+         <size>0.1906 0.15</size>
+      </image>
+      <image name="e_card" extra="true">
+         <pos>0.3125 0.1417</pos>
+         <size>0.6516 0.475</size>
+      </image>
+      <image name="e_home" extra="true">
+         <pos>0.6383 0.3792</pos>
+         <size>0.15 0.2</size>
+      </image>
+      <image name="e_frame" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+      </image>
+      <image name="md_image">
+         <pos>0.6383 0.3792</pos>
+         <minSize>0.6516 0.475</minSize>
+      </image>
+      <text name="e_system" extra="true">
+         <pos>0.3125 0.6292</pos>
+         <size>0.65 0.0375</size>
+         <fontSize>0.028</fontSize>
+      </text>
+      <text name="md_name">
+         <pos>0.3125 0.6625</pos>
+         <size>0.65 0.0708</size>
+         <fontSize>0.045</fontSize>
+      </text>
+      <image name="e_i_genre" extra="true">
+         <pos>0.3125 0.7417</pos>
+         <size>0.0234 0.0292</size>
+      </image>
+      <text name="md_genre">
+         <pos>0.3438 0.7375</pos>
+         <size>0.2656 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </text>
+      <image name="e_i_players" extra="true">
+         <pos>0.6094 0.7417</pos>
+         <size>0.0234 0.0292</size>
+      </image>
+      <text name="md_players">
+         <pos>0.6406 0.7375</pos>
+         <size>0.1094 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.7734 0.7375</pos>
+         <size>0.1914 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </datetime>
+      <image name="e_i_dev" extra="true">
+         <pos>0.3125 0.7833</pos>
+         <size>0.0234 0.0292</size>
+      </image>
+      <text name="md_developer">
+         <pos>0.3438 0.7792</pos>
+         <size>0.2656 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </text>
+      <image name="e_i_studio" extra="true">
+         <pos>0.6094 0.7833</pos>
+         <size>0.0234 0.0292</size>
+      </image>
+      <text name="md_publisher">
+         <pos>0.6406 0.7792</pos>
+         <size>0.3242 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </text>
+      <rating name="md_rating">
+         <pos>0.3125 0.8208</pos>
+         <size>0.1328 0.0333</size>
+      </rating>
+      <image name="e_i_plays" extra="true">
+         <pos>0.6094 0.8250</pos>
+         <size>0.0234 0.0292</size>
+      </image>
+      <text name="md_playcount">
+         <pos>0.6406 0.8208</pos>
+         <size>0.1094 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </text>
+      <datetime name="md_lastplayed">
+         <pos>0.7734 0.8208</pos>
+         <size>0.1914 0.0375</size>
+         <fontSize>0.024</fontSize>
+      </datetime>
+   </view>
+</theme>

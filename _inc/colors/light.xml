@@ -1,0 +1,21 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Light interface (the Switch 2 home as it ships): the whole theme and the settings menu -->
+   <variables>
+      <bgColor>F0F0F0FF</bgColor>
+      <textColor>1E1E1EFF</textColor>
+      <subColor>8C8C8CFF</subColor>
+      <accentColor>2D6BFFFF</accentColor>
+      <tileColor>E2E2E6FF</tileColor>
+      <dockColor>FFFFFFFF</dockColor>
+      <iconColor>1E1E1EFF</iconColor>
+      <menuBackgroundColor>F5F5F5F2</menuBackgroundColor>
+      <menuTextColor>1E1E1EAA</menuTextColor>
+      <menuTextSelectedColor>1E1E1E</menuTextSelectedColor>
+      <menuSeparatorColor>1E1E1E1A</menuSeparatorColor>
+      <helpTextColor>1E1E1E66</helpTextColor>
+      <helpIconColor>1E1E1E66</helpIconColor>
+      <menuTextInputImage>./_inc/images/menu-textinput-light.png</menuTextInputImage>
+      <menuTextInputImageActive>./_inc/images/menu-textinput-light-active.png</menuTextInputImageActive>
+   </variables>
+</theme>

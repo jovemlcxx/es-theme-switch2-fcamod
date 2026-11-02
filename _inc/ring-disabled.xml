@@ -1,0 +1,4 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Selection outline OFF: defines nothing. Do not "override" the enabled ring instead (visible=false); the elements simply are not there. -->
+</theme>

@@ -1,0 +1,13 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Selection outline ON (the "switch2-ring" subset in theme.xml): the colour ring around the selected system, 134 px around the tile at x 40..164, y 150..274
+        (drawn 5 px outside it). It is fixed at the selected position, over the tiles. -->
+   <view name="system">
+      <image name="e_ring" extra="true">
+         <path>./_inc/images/ring-tile.png</path>
+         <pos>0.0547 0.3021</pos>
+         <size>0.2094 0.2792</size>
+         <zIndex>50</zIndex>
+      </image>
+   </view>
+</theme>
