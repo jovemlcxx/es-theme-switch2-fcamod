@@ -27,7 +27,9 @@
       <confirmButton>a</confirmButton>
       <wallpaperPath>./_inc/images/blank.png</wallpaperPath>
       <wallpaperVideoPath>./_inc/background/bg_1.mp4</wallpaperVideoPath>
+      <labelBg>F0F0F0D8</labelBg>
       <bgColor>F0F0F0FF</bgColor>
+      <systemBackgroundTint>FFFFFFFF</systemBackgroundTint>
       <textColor>1E1E1EFF</textColor>
       <subColor>8C8C8CFF</subColor>
       <accentColor>2D6BFFFF</accentColor>
@@ -259,6 +261,7 @@
          <text>${system.fullName}</text>
          <fontPath>${fontLight}</fontPath>
          <color>${accentColor}</color>
+         <backgroundColor>${labelBg}</backgroundColor>
          <alignment>left</alignment>
          <verticalAlignment>center</verticalAlignment>
          <forceUppercase>false</forceUppercase>
@@ -267,6 +270,7 @@
       <text name="systemInfo">
          <fontPath>${fontLight}</fontPath>
          <color>${subColor}</color>
+         <backgroundColor>${labelBg}</backgroundColor>
          <alignment>right</alignment>
          <verticalAlignment>center</verticalAlignment>
          <forceUppercase>false</forceUppercase>
