@@ -15,5 +15,6 @@
       <confirmButtonLabel>確認按鈕 (A/B)</confirmButtonLabel>
       <footerLabel>按鍵提示</footerLabel>
       <ringLabel>選取輪廓</ringLabel>
+      <noBgLabel>無背景（純色）</noBgLabel>
    </variables>
 </theme>

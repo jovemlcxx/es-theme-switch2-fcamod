@@ -1,0 +1,15 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Game list with a wallpaper (slots 2 to 20, included after the layout): no mask and no card plate over the wallpaper, the game's image fitted in its card (maxSize wins over the layout's minSize) -->
+   <view name="grid">
+      <image name="e_card" extra="true">
+         <path>./_inc/images/blank.png</path>
+      </image>
+      <image name="e_frame" extra="true">
+         <path>./_inc/images/blank.png</path>
+      </image>
+      <image name="md_image">
+         <maxSize>0.6516 0.475</maxSize>
+      </image>
+   </view>
+</theme>

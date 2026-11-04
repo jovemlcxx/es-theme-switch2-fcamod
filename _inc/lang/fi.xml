@@ -15,5 +15,6 @@
       <confirmButtonLabel>Vahvistuspainike (A/B)</confirmButtonLabel>
       <footerLabel>Painikeohjeet</footerLabel>
       <ringLabel>Valintakehys</ringLabel>
+      <noBgLabel>Ei taustaa (tasainen väri)</noBgLabel>
    </variables>
 </theme>

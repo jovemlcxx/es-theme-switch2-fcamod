@@ -15,5 +15,6 @@
       <confirmButtonLabel>Pulsante di conferma (A/B)</confirmButtonLabel>
       <footerLabel>Legenda pulsanti</footerLabel>
       <ringLabel>Contorno di selezione</ringLabel>
+      <noBgLabel>Nessuno sfondo (tinta unita)</noBgLabel>
    </variables>
 </theme>

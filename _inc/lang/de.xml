@@ -15,5 +15,6 @@
       <confirmButtonLabel>Bestätigungstaste (A/B)</confirmButtonLabel>
       <footerLabel>Tastenlegende</footerLabel>
       <ringLabel>Auswahlrahmen</ringLabel>
+      <noBgLabel>Kein Hintergrund (einfarbig)</noBgLabel>
    </variables>
 </theme>

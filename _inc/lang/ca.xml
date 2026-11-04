@@ -15,5 +15,6 @@
       <confirmButtonLabel>Botó de confirmació (A/B)</confirmButtonLabel>
       <footerLabel>Llegenda dels botons</footerLabel>
       <ringLabel>Contorn de selecció</ringLabel>
+      <noBgLabel>Sense fons (color llis)</noBgLabel>
    </variables>
 </theme>

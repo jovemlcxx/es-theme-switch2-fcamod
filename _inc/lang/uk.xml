@@ -15,5 +15,6 @@
       <confirmButtonLabel>Кнопка підтвердження (A/B)</confirmButtonLabel>
       <footerLabel>Підказки кнопок</footerLabel>
       <ringLabel>Контур вибору</ringLabel>
+      <noBgLabel>Без тла (суцільний колір)</noBgLabel>
    </variables>
 </theme>

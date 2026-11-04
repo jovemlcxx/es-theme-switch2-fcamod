@@ -15,5 +15,6 @@
       <confirmButtonLabel>Bevestigingsknop (A/B)</confirmButtonLabel>
       <footerLabel>Knoppenlegenda</footerLabel>
       <ringLabel>Selectiekader</ringLabel>
+      <noBgLabel>Geen achtergrond (effen kleur)</noBgLabel>
    </variables>
 </theme>

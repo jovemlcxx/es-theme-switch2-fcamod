@@ -15,5 +15,6 @@
       <confirmButtonLabel>決定ボタン (A/B)</confirmButtonLabel>
       <footerLabel>ボタンガイド</footerLabel>
       <ringLabel>選択の枠線</ringLabel>
+      <noBgLabel>背景なし（単色）</noBgLabel>
    </variables>
 </theme>

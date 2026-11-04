@@ -2,7 +2,7 @@
    <formatVersion>7</formatVersion>
    <!-- Dark interface, pure black for OLED screens: the whole theme and the settings menu -->
    <variables>
-      <labelBg>000000D8</labelBg>
+      <bgClear>00000000</bgClear>
       <bgColor>000000FF</bgColor>
       <textColor>F2F2F2FF</textColor>
       <subColor>8C8C8CFF</subColor>

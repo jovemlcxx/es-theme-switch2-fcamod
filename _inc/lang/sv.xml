@@ -15,5 +15,6 @@
       <confirmButtonLabel>Bekräftelseknapp (A/B)</confirmButtonLabel>
       <footerLabel>Knappförklaring</footerLabel>
       <ringLabel>Markeringsram</ringLabel>
+      <noBgLabel>Ingen bakgrund (enfärgad)</noBgLabel>
    </variables>
 </theme>

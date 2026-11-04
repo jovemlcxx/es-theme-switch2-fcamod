@@ -15,5 +15,6 @@
       <confirmButtonLabel>Tombol Konfirmasi (A/B)</confirmButtonLabel>
       <footerLabel>Keterangan Tombol</footerLabel>
       <ringLabel>Garis Tepi Pilihan</ringLabel>
+      <noBgLabel>Tanpa latar (warna polos)</noBgLabel>
    </variables>
 </theme>

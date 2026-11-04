@@ -15,5 +15,6 @@
       <confirmButtonLabel>Przycisk potwierdzenia (A/B)</confirmButtonLabel>
       <footerLabel>Legenda przycisków</footerLabel>
       <ringLabel>Obrys zaznaczenia</ringLabel>
+      <noBgLabel>Bez tła (jednolity kolor)</noBgLabel>
    </variables>
 </theme>

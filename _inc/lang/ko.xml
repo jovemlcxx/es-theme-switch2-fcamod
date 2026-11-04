@@ -15,5 +15,6 @@
       <confirmButtonLabel>확인 버튼 (A/B)</confirmButtonLabel>
       <footerLabel>버튼 안내</footerLabel>
       <ringLabel>선택 윤곽선</ringLabel>
+      <noBgLabel>배경 없음 (단색)</noBgLabel>
    </variables>
 </theme>

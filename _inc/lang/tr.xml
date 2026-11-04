@@ -15,5 +15,6 @@
       <confirmButtonLabel>Onay Düğmesi (A/B)</confirmButtonLabel>
       <footerLabel>Düğme Açıklaması</footerLabel>
       <ringLabel>Seçim Çerçevesi</ringLabel>
+      <noBgLabel>Arka plan yok (düz renk)</noBgLabel>
    </variables>
 </theme>

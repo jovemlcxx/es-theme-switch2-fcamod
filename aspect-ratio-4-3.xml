@@ -60,10 +60,10 @@
          <fontSize>0.026</fontSize>
       </text>
       <carousel name="systemcarousel">
-         <pos>-0.3125 0.3125</pos>
-         <size>2.1875 0.25833</size>
+         <pos>-0.3125 0</pos>
+         <size>2.1875 1</size>
          <logoSize>0.19375 0.25833</logoSize>
-         <logoPos>0.375 0</logoPos>
+         <logoPos>0.375 0.3125</logoPos>
          <maxLogoCount>10</maxLogoCount>
          <origin>0 0</origin>
       </carousel>

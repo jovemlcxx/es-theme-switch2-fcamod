@@ -15,5 +15,6 @@
       <confirmButtonLabel>Buton de confirmare (A/B)</confirmButtonLabel>
       <footerLabel>Legendă butoane</footerLabel>
       <ringLabel>Contur selecție</ringLabel>
+      <noBgLabel>Fără fundal (culoare uni)</noBgLabel>
    </variables>
 </theme>

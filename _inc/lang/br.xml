@@ -15,5 +15,6 @@
       <confirmButtonLabel>Botão de Confirmar (A/B)</confirmButtonLabel>
       <footerLabel>Legenda dos Botões</footerLabel>
       <ringLabel>Contorno da Seleção</ringLabel>
+      <noBgLabel>Sem fundo (cor lisa)</noBgLabel>
    </variables>
 </theme>

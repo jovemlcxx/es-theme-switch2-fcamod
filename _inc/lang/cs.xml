@@ -15,5 +15,6 @@
       <confirmButtonLabel>Potvrzovací tlačítko (A/B)</confirmButtonLabel>
       <footerLabel>Legenda tlačítek</footerLabel>
       <ringLabel>Obrys výběru</ringLabel>
+      <noBgLabel>Bez pozadí (jednobarevné)</noBgLabel>
    </variables>
 </theme>

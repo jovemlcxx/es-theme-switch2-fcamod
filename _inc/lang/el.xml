@@ -15,5 +15,6 @@
       <confirmButtonLabel>Κουμπί επιβεβαίωσης (A/B)</confirmButtonLabel>
       <footerLabel>Υπόμνημα κουμπιών</footerLabel>
       <ringLabel>Περίγραμμα επιλογής</ringLabel>
+      <noBgLabel>Χωρίς φόντο (μονόχρωμο)</noBgLabel>
    </variables>
 </theme>

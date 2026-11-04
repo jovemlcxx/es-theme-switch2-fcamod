@@ -15,5 +15,6 @@
       <confirmButtonLabel>Nút xác nhận (A/B)</confirmButtonLabel>
       <footerLabel>Chú thích nút</footerLabel>
       <ringLabel>Viền lựa chọn</ringLabel>
+      <noBgLabel>Không nền (màu đơn sắc)</noBgLabel>
    </variables>
 </theme>

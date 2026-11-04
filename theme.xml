@@ -13,6 +13,7 @@
       <enabledLabel>Enabled</enabledLabel>
       <disabledLabel>Disabled</disabledLabel>
       <wallpaperLabel>Wallpaper</wallpaperLabel>
+      <noBgLabel>No background (solid color)</noBgLabel>
       <colorSchemeLabel>Color Scheme</colorSchemeLabel>
       <darkLabel>Dark</darkLabel>
       <lightLabel>Light</lightLabel>
@@ -27,7 +28,7 @@
       <confirmButton>a</confirmButton>
       <wallpaperPath>./_inc/images/blank.png</wallpaperPath>
       <wallpaperVideoPath>./_inc/background/bg_1.mp4</wallpaperVideoPath>
-      <labelBg>F0F0F0D8</labelBg>
+      <bgClear>F0F0F000</bgClear>
       <bgColor>F0F0F0FF</bgColor>
       <systemBackgroundTint>FFFFFFFF</systemBackgroundTint>
       <textColor>1E1E1EFF</textColor>
@@ -77,9 +78,9 @@
       <include name="4-3" displayName="4:3" />
    </subset>
 
-   <!-- 20 wallpaper slots (the same subset as the other themes). Slot 1 is the plain background of the Switch 2; 2 to 20 are yours (_inc/background/bg_<n>.png / .mp4) -->
+   <!-- 20 wallpaper slots (the same subset as the other themes). Slot 1 is the default: NO background, the solid colour of the scheme (white or OLED black); 2 to 20 are yours (_inc/background/bg_<n>.png / .mp4) -->
    <subset name="wallpaper" displayName="${wallpaperLabel}">
-      <include name="1" displayName="1 (default)">./_inc/wallpapers/1.xml</include>
+      <include name="1" displayName="${noBgLabel}">./_inc/wallpapers/1.xml</include>
       <include name="2" displayName="2">./_inc/wallpapers/2.xml</include>
       <include name="3" displayName="3">./_inc/wallpapers/3.xml</include>
       <include name="4" displayName="4">./_inc/wallpapers/4.xml</include>
@@ -228,6 +229,14 @@
          <size>1 1</size>
          <zIndex>1</zIndex>
       </image>
+      <!-- shading of both screens: the scheme's background colour, zero at the top of the screen and opaque at the bottom (over a wallpaper, under everything else) -->
+      <image name="e_gradient" extra="true">
+         <path>./_inc/images/gradient-bottom.png</path>
+         <color>${bgColor}</color>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>10</zIndex>
+      </image>
       <image name="e_avatar" extra="true">
          <path>./_inc/images/avatar.png</path>
          <zIndex>60</zIndex>
@@ -261,7 +270,6 @@
          <text>${system.fullName}</text>
          <fontPath>${fontLight}</fontPath>
          <color>${accentColor}</color>
-         <backgroundColor>${labelBg}</backgroundColor>
          <alignment>left</alignment>
          <verticalAlignment>center</verticalAlignment>
          <forceUppercase>false</forceUppercase>
@@ -269,19 +277,21 @@
       </text>
       <text name="systemInfo">
          <fontPath>${fontLight}</fontPath>
-         <color>${subColor}</color>
-         <backgroundColor>${labelBg}</backgroundColor>
+         <color>${textColor}</color>
          <alignment>right</alignment>
          <verticalAlignment>center</verticalAlignment>
          <forceUppercase>false</forceUppercase>
          <zIndex>60</zIndex>
       </text>
       <!-- the row of tiles: a linear carousel (nothing grows), drawn far beyond both edges of the screen; the colour ring (optional, the "ring" subset) is the cursor, fixed at the selected position over the tiles -->
+      <!-- the carousel's box is the whole screen: its own background (clear at the top, the scheme's colour at the bottom) is the shading of this screen. ES draws the static
+           background VIDEO after every extra under the carousel, so an image extra would be hidden by it; the carousel's background is drawn after the video -->
       <carousel name="systemcarousel">
          <type>horizontal</type>
          <logoAlignment>top</logoAlignment>
          <zIndex>40</zIndex>
-         <color>00000000</color>
+         <color>${bgClear}</color>
+         <colorEnd>${bgColor}</colorEnd>
          <logoScale>1</logoScale>
          <minLogoOpacity>1</minLogoOpacity>
          <unselectedOpacity>1</unselectedOpacity>
@@ -372,7 +382,7 @@
       <text name="e_system" extra="true">
          <text>${system.fullName}</text>
          <fontPath>${fontLight}</fontPath>
-         <color>${accentColor}</color>
+         <color>${textColor}</color>
          <alignment>left</alignment>
          <verticalAlignment>center</verticalAlignment>
          <forceUppercase>false</forceUppercase>
@@ -390,7 +400,7 @@
       <!-- the game's data under its name (three rows): genre, players and release date / developer and publisher / rating, times played and last played -->
       <text name="md_genre, md_players, md_developer, md_publisher, md_playcount">
          <fontPath>${fontLight}</fontPath>
-         <color>${subColor}</color>
+         <color>${textColor}</color>
          <alignment>left</alignment>
          <verticalAlignment>center</verticalAlignment>
          <forceUppercase>false</forceUppercase>
@@ -398,7 +408,7 @@
       </text>
       <datetime name="md_releasedate, md_lastplayed">
          <fontPath>${fontLight}</fontPath>
-         <color>${subColor}</color>
+         <color>${textColor}</color>
          <alignment>right</alignment>
          <zIndex>60</zIndex>
       </datetime>
@@ -486,4 +496,24 @@
    </view>
 
    <include subset="aspect-ratio" name="4-3">./aspect-ratio-4-3.xml</include>
+   <!-- AFTER the layout: with a wallpaper (slots 2 to 20) the game list does not mask the spill of the image (that would hide the wallpaper / video): the image is fitted in its card -->
+   <include subset="wallpaper" name="2">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="3">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="4">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="5">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="6">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="7">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="8">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="9">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="10">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="11">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="12">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="13">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="14">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="15">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="16">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="17">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="18">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="19">./_inc/wallpaper-after.xml</include>
+   <include subset="wallpaper" name="20">./_inc/wallpaper-after.xml</include>
 </theme>

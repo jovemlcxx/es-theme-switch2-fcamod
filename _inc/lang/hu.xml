@@ -15,5 +15,6 @@
       <confirmButtonLabel>Megerősítő gomb (A/B)</confirmButtonLabel>
       <footerLabel>Gombjelmagyarázat</footerLabel>
       <ringLabel>Kijelölés körvonala</ringLabel>
+      <noBgLabel>Nincs háttér (egyszínű)</noBgLabel>
    </variables>
 </theme>
