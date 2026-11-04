@@ -135,10 +135,6 @@
          <pos>0.3125 0.1417</pos>
          <size>0.6516 0.475</size>
       </image>
-      <image name="e_home" extra="true">
-         <pos>0.6383 0.3792</pos>
-         <size>0.15 0.2</size>
-      </image>
       <image name="e_frame" extra="true">
          <pos>0 0</pos>
          <size>1 1</size>

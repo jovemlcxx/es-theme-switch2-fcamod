@@ -356,17 +356,11 @@
    </view>
 
    <view name="grid">
-      <!-- the handheld home's main panel: a rounded card with the game's image fitted inside it. The home mark is behind the image: it shows when a game has none -->
+      <!-- the handheld home's main panel: a rounded card with the game's image fitted inside it. -->
       <image name="e_card" extra="true">
          <path>./_inc/images/card.png</path>
          <color>${tileColor}</color>
          <zIndex>15</zIndex>
-      </image>
-      <image name="e_home" extra="true">
-         <path>./_inc/images/home.png</path>
-         <color>${textColor}</color>
-         <origin>0.5 0.5</origin>
-         <zIndex>20</zIndex>
       </image>
       <!-- the image COVERS the card (minSize) and spills over it; the mask (the background colour with a rounded hole) hides the spill: the image fills the rounded card.
            The mask also covers the wallpaper on this screen, as the game's backdrop does in the PS5 theme -->
